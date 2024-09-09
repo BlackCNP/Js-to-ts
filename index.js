@@ -1,29 +1,26 @@
 
-function add(a, b) {
+function add(a: number, b: number): number {
     return a + b;
 }
 
 
-function show(message) {
-    console.log("Message:", message);
+function show(message: string): void {
+    console.log(`Message: ${message}`);
 }
 
 
-function isPositive(number) {
-    if (number > 0) {
-        return true;
-    } else {
-        return false;
+function isPositive(number: number): boolean {
+    return number > 0;
     }
-}
 
 
-let num1 = 25;
-let num2 = 25;
-let sum = add(num1, num2);
-show("The sum is: " + sum);
 
-let checkNumber = -5;
+let num1: number = 25;
+let num2: number = 25;
+let sum: number = add(num1, num2);
+show(`TThe sum is: " ${sum}`);
+
+let checkNumber: number = -5;
 if (isPositive(checkNumber)) {
     show("The number is positive.");
 } else {
