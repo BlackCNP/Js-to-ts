@@ -28,6 +28,7 @@
 
     <!-- Template Stylesheet -->
     <link href="css/style.css" rel="stylesheet">
+    <script src="js/script.js" defer></script>
 </head>
 
 <body>
@@ -79,6 +80,7 @@
                 </button>
                 <div class="collapse navbar-collapse" id="navbarCollapse">
                     <div class="navbar-nav ms-auto py-0">
+                        <button class="nav-item nav-link active" id="openModal">Відкрити модальне вікно</button>
                         <a href="index.html" class="nav-item nav-link active">Home</a>
                         <a href="about.html" class="nav-item nav-link">About</a>
                         <a href="service.html" class="nav-item nav-link">Service</a>
@@ -698,7 +700,13 @@
     </div>
     <!-- Footer End -->
 
-
+    <div id="myModal">
+        <div class="modal-content">
+          <span id="closeModal">&times;</span>
+          <p>Модальне вікно</p> 
+          <div id="dataDisplay"></div>
+        </div>
+      </div>
    
 
 
